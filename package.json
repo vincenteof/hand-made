@@ -1,0 +1,16 @@
+{
+  "name": "hand-made",
+  "version": "0.1.0",
+  "description": "hand made functions with types",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.32.2"
+  }
+}
