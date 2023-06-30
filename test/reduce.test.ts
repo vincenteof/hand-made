@@ -24,9 +24,13 @@ describe('reduce', () => {
   })
 
   test('Flattening an Array of Arrays', () => {
-    expect(reduce([[1, 2, 3], [4, 5], [6]], (a, b) => a.concat(b), [])).toEqual(
-      [1, 2, 3, 4, 5, 6]
-    )
+    expect(
+      reduce(
+        [[1, 2, 3], [4, 5], [6]],
+        (a: number[], b: number[]) => a.concat(b),
+        []
+      )
+    ).toEqual([1, 2, 3, 4, 5, 6])
   })
 
   test('Edge Case: Empty Array', () => {
