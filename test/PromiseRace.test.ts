@@ -40,7 +40,7 @@ describe('PromiseRace', () => {
     })
 
     // FIXME ts
-    const result = await PromiseRace([promise5, 'two'])
+    const result = await PromiseRace([promise5, 'two'] as any)
     expect(result).toEqual('two') // 'two' is a non-promise value
   })
 })
